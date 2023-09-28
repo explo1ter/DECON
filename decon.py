@@ -39,14 +39,16 @@ def decrypt_md5():
         print("wordlist not found")
         decrypt_md5()
     print("Wordlist found")
-    for word in wlist:
-        stripped_hash = word.strip()
-        if(hashlib.md5(stripped_hash.encode()).hexdigest() == md5_hash):
-            f = True
-            print(f"\nDecrypted!!\nDecoded string : {word}")
-            break
-    if f == False:
-        print("Decoding failed\n use another wordlist")
+    try:
+        for word in wlist:
+            stripped_hash = word.strip()
+            if(hashlib.md5(stripped_hash.encode()).hexdigest() == md5_hash):
+                f = True
+                print(f"\nDecrypted!!\nDecoded string : {word}")
+                break
+    except:
+        if f == False:
+            print("Decoding failed\nuse another wordlist")
 
 
 choice = 0
