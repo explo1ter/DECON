@@ -26,7 +26,7 @@ def encrypt_md5():
     md5_hash = md5_obj.hexdigest()
     print("Encrypting the string....")
     sleep(1)
-    print(f"Encrypted script : {md5_hash}")
+    print(f"Encrypted string : {md5_hash}")
 
 def decrypt_md5():
     f = False
