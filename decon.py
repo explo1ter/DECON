@@ -7,16 +7,16 @@ print("\n-------------------------\nDECON\n\nBy Nibil Mathew\ngithub : explo1ter
 
 
 def encrypt_b64():
-    user_pass = input("Enter the password to encrypt : ")
-    print("\nEncrypting your password.....\n")
-    sleep(2)
+    user_pass = input("Enter the string to encrypt : ")
+    print("\nEncrypting your string.....\n")
+    sleep(1)
     b64_pass = base64.b64encode(user_pass.encode())
-    print(f"Your encoded password : {b64_pass}")
+    print(f"Your encoded string : {b64_pass}")
 
 def decrypt_b64():
     b64hash = input("Enter the base 64 hashed format : ")
-    print("\nDecrypting your password....\n")
-    sleep(2)
+    print("\nDecrypting your string....\n")
+    sleep(1)
     dec_data = base64.b64decode(b64hash)
     print(f"Decoded format : {dec_data}")
 
@@ -24,6 +24,8 @@ def encrypt_md5():
     md5_raw = input("Enter the string to encrypt : ")
     md5_obj = hashlib.md5(md5_raw.encode())
     md5_hash = md5_obj.hexdigest()
+    print("Encrypting the string....")
+    sleep(1)
     print(f"Encrypted script : {md5_hash}")
 
 def decrypt_md5():
