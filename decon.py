@@ -52,7 +52,7 @@ def decrypt_md5():
                 break
     except:
         if f == False:
-            print("Decoding failed\nuse another wordlist")
+            print("\nDecoding failed\nuse another wordlist")
 
 
 choice = 0
