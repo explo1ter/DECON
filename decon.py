@@ -1,9 +1,13 @@
 import base64
 import hashlib
 from time import sleep
+import pyfiglet
 
-print("\n-------------------------\nDECON\n\nBy Nibil Mathew\ngithub : explo1ter\n-------------------------")
-
+print("\n"+"*"*65)
+print(pyfiglet.figlet_format("                 DECON"))
+print("*\t\t\tBy Nibil Mathew\t\t\t\t*")
+print("*\t\t\tgithub:explo1ter\t\t\t*")
+print("\n"+"*"*65)
 
 
 def encrypt_b64():
