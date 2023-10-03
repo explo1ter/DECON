@@ -1,5 +1,5 @@
 # DECON
-DECON is a simple menu driven program written in python to encrypt and decrypt base64, md5 and sha-256 hashing algorithms.
+DECON is a simple menu driven program written in python to encode and decode base64, md5 and sha-256 hashing algorithms.
 ## USAGE
 Nothing to worry about usage, just execute the program and you will be fully assisted.
 > Example: python3 decon.py
