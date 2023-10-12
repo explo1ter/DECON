@@ -17,6 +17,7 @@ def encrypt_b64():
 def decrypt_b64():
     b64hash = input("Enter the base 64 hashed format : ")
     print("\nDecrypting your string....\n")
+    dec_data = base64.b64decode(b64hash)
     print(f"\nDecoded format : {dec_data}")
 
 def encrypt_md5():
